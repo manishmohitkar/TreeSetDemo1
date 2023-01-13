@@ -1,5 +1,6 @@
 package com.mani.treesetdemo;
 
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -14,9 +15,11 @@ public class TreeSetDemo1 {
 		set.add("Nagpur");
 		set.add("Delhi");
 
-		for (String s : set) {
+		Iterator<String> itr = set.iterator();
 
-			System.out.println(s);
+		while (itr.hasNext()) {
+			System.out.println(itr);
+
 		}
 
 	}
